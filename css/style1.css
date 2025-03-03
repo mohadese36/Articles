@@ -1,0 +1,131 @@
+
+/* استایل کلی */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Tahoma', sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center; /* وسط‌چین کردن صفحه */
+    align-items: flex-start;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+    width: 100%;
+    max-width: 1200px; /* حداکثر عرض */
+    background-color: white;
+    border-radius: 8px;
+}
+
+/* استایل سایدبار */
+.sidebar {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    height: 100vh; /* ارتفاع برابر با ارتفاع کل صفحه */
+    overflow: hidden; /* جلوگیری از اسکرول داخلی */
+}
+
+
+.sidebar ul {
+    list-style-type: none;
+}
+
+.sidebar ul li {
+    margin: 15px 0;
+}
+
+.sidebar ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+/* استایل محتوای مقاله */
+.content {
+    padding: 20px;
+}
+
+article-body h2 {
+    font-size: 1.8rem;
+    margin-top: 20px;
+}
+
+article-body p {
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* استایل هدر */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 20px; /* فاصله از محتوای بعدی */
+    border-radius: 8px;
+}
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 5px;
+}
+
+/* استایل فوتر */
+footer {
+    background-color: #f40d0d !important;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    margin-top: 20px; /* فاصله از محتوای قبل */
+    border-radius: 8px;
+}
+
+footer p {
+    font-size: 0.9rem;
+}
+
+
+/* استایل نسخه موبایل */
+@media screen and (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        position: absolute;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        transition: left 0.3s ease;
+    }
+
+    .sidebar.open {
+        left: 0;
+    }
+
+    .content {
+        padding-left: 20px;
+    }
+
+    .sidebar ul li a {
+        font-size: 14px;
+    }
+}

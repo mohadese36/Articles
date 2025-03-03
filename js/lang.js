@@ -84,14 +84,14 @@ async function setLanguage(lang) {
 }
 
 document.addEventListener('DOMContentLoaded', () => {
-    const savedLang = localStorage.getItem('selectedLanguage');  // بازیابی زبان ذخیره شده از لوکال استورج
-    const defaultLang = savedLang || 'en';  // اگر زبان ذخیره شده وجود نداشت، زبان پیش‌فرض را انگلیسی قرار می‌دهیم
-    setLanguage(defaultLang);
+    const urlParams = new URLSearchParams(window.location.search);
+    const lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+    setLanguage(lang);
 
     // تنظیم متن دکمه تغییر زبان
     const languageSwitcher = document.getElementById('change-language2');
     const languageSwitcherButton = languageSwitcher.querySelector('button');
-    languageSwitcherButton.textContent = defaultLang === 'fa' ? 'English' : 'Persian';
+    languageSwitcherButton.textContent = lang === 'fa' ? 'English' : 'Persian';
 
     languageSwitcher.addEventListener('click', () => {
         const newLang = document.documentElement.lang === 'fa' ? 'en' : 'fa';
@@ -110,6 +110,6 @@ document.addEventListener('click', (event) => {
     }
 });
 
-////////////////////تایتل
+
 
 
