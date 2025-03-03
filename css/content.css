@@ -1,0 +1,200 @@
+
+.wrapper {
+    display: grid;
+    grid-template-rows: 1fr auto; 
+    grid-template-columns: 1fr; 
+    height: 100%;
+    padding-top: 6rem;
+    
+}
+
+.container {
+    display: grid;
+    grid-template-columns: minmax(260px, 1fr) 3fr;
+    gap: 0.5rem;
+    padding: 1.25rem;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.content {
+    padding: 0 1rem;
+}
+
+header {
+    position: relative;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
+    background-size: cover !important;
+    color: var(--light-gray);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 6rem 2rem; */
+    padding: 5rem 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    text-transform: uppercase;
+    text-wrap: wrap;
+    margin-bottom: 1.25rem;
+    border-radius: 0.5rem;
+
+    object-fit: cover !important; 
+    object-position: center !important;
+}
+
+.creativity_header {
+    background: url('../image/my-Header1.jpg');
+}
+
+.uiEngineer_header {
+    background: url('../image/my-Header6.jpg');
+
+}
+
+.seniorFrontendEngineer_header {
+    background: url('../image/my-header5.jpg');
+}
+
+.webDevelopment_header {
+    background: url('../image/my-Header3.jpg');
+}
+
+.ai_header {
+    background: url('../image/my-header2.jpg');
+}
+
+.frontendDevelopment_header{
+    background: url('../image/my_Header4.jpg');
+}
+
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3); 
+    border-radius: 0.5rem; 
+    z-index: 1; 
+
+}
+
+header > * {
+    position: relative;
+    z-index: 2; /* قرار دادن محتوا بالای لایه تاریک */
+}
+
+
+header h1 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+header p {
+    font-size: 1rem;
+    margin-top: 0.3125rem; /* 5px به rem */
+}
+
+.study-time {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-self: center;
+    width: 90%;
+    margin: 0 auto 2rem;
+    padding: 0.5rem 2rem; 
+    font-size: clamp(0.65rem, 1vw, 0.9rem);
+    font-weight: 600;
+    color: var(--medium-gray);
+    gap: 0.5rem;
+    border-top: 1px solid var(--medium-gray);
+    border-bottom: 1px solid var(--medium-gray);
+}
+
+.study-time span {
+    display: flex;
+    align-items: center;
+}
+
+.study-time i {
+    color: var(--medium-gray);
+    font-size: 1.15rem;
+    margin-left: 0.25rem;
+}
+
+[dir="ltr"] .study-time i {
+    margin-left: 0;
+    margin-right: 0.25rem;
+}
+
+[dir="ltr"] .study-time span:nth-child(3) i {
+    transform: rotate(282deg);
+}
+
+section {
+    margin-bottom: 1.5625rem; 
+}
+
+.article-body {
+    max-width: 1100px;
+    margin: 1.75rem auto 0;
+    padding: 1.5rem 1.5rem 0;
+    background-color: var(--background-body);
+    border-radius: 0.625rem; /* 10px به rem */
+    border-bottom: 1px solid;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+section {
+    padding: 1.25rem; 
+    margin-bottom: 1.5625rem; 
+
+}
+
+section ul li {
+    position: relative;
+    margin-bottom: 12px;
+}
+
+.example {
+    color: var(--text-color); 
+    opacity: 0.8;
+    background-color: var(--light-gray);
+    border-left: 0.3125rem solid var(--secondary-color); 
+    padding: 0.75rem 1.5625rem;
+    margin-bottom: 1.25rem;
+    font-style: italic;
+}
+
+[dir="ltr"] .example {
+    border-left: 0;
+    border-right: 0.3125rem solid var(--secondary-color); 
+}
+
+[dir="rtl"] #web-development ul,
+[dir="rtl"] #WebDevelopment_frontend_resources,
+[dir="rtl"] #WebDevelopment_backend_resources,
+[dir="rtl"] #WebDevelopment_servers_resources,
+[dir="rtl"] #WebDevelopment_devops_resources,
+[dir="rtl"] #WebDevelopment_security_resources,
+[dir="rtl"] #SeniorFrontend_resources_list,
+[dir="rtl"] #AI_future_resources{
+    text-align: left;
+}
+
+.image-container {
+    margin-bottom: 1.25rem;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 0.5rem; 
+}
+
+#real-world-examples p {
+    margin-bottom: 0.75rem !important;
+}

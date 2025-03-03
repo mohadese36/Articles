@@ -1,0 +1,610 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title data-title-key="webDevelopment">توسعه وب</title>
+</head>
+<body>
+    <article>
+        <div class="header">
+            <div class="logo_container">
+                <img src="image/my-purple_lofo.png" alt="">
+            </div>
+            <div class="language-switcher " id="change-language2">
+                 <button class="button"></button>
+            </div>
+    
+        </div>
+
+        <div class="wrapper">
+            <div class="container">
+                <div class="nav-container">
+
+                    <button class="btn">
+                        <div class="menu-text_container">
+                            <i class="fa-solid fa-chevron-down"></i> 
+                            <span id="navigation_quick_read_button" class="menu-text">مطالعه سریع</span>
+                        </div>
+                    </button>
+
+                    <nav class="sidebar">
+                        
+                        <div class="row">
+                            <div class="top_sidebar">
+                            <div class="sidebar-image-container">
+                                <img src="image/circle-word-long.svg" alt="SVG Icon" />
+                                <span id="navigation_quick_read_sidebar">مطالعه سریع</span>
+                            </div>
+                            </div>                        
+                        </div>
+                        
+                        <div class="row">
+                            <div class="sidebar_list">
+                                <ul>
+                                    <li><a href="#intro" id="navigation_intro">مقدمه</a></li>
+                                    <li><a href="#web-development" id="navigation_web_development">توسعه وب چیست؟</a></li>
+                                    <li><a href="#frontend" id="navigation_frontend">فرانت‌اند، تعامل مستقیم با کاربران</a></li>
+                                    <li><a href="#backend" id="navigation_backend">بک‌اند، منطق و پردازش داده‌ها</a></li>
+                                    <li><a href="#servers" id="navigation_servers">نقش سرورها در توسعه وب</a></li>
+                                    <li><a href="#devops" id="navigation_devops">استقرار (Deployment) و DevOps</a></li>
+                                    <li><a href="#security" id="navigation_security">امنیت در توسعه وب</a></li>
+                                    <li><a href="#trends" id="navigation_trends">ترندهای جدید در توسعه وب</a></li>
+                                    <li><a href="#conclusion" id="navigation_conclusion">نتیجه‌گیری</a></li>
+                                </ul>
+                                
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="social-icons">
+                                <a href="https://github.com/mohadese36" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/pania-fakhri-6bab85238" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/pania_fakhri/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                                </a>       
+                            </div>
+                        </div>
+        
+        
+                    </nav>
+                </div>
+                <main class="content">
+                    <header class="webDevelopment_header">
+                        <h1 id="header_web_development">توسعه وب، از مفاهیم پایه تا تکنولوژی‌های پیشرفته</h1>   
+                    </header>
+                    <div class="study-time">
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            <span id="study_time_web_development_time">مدت زمان مطالعه : 15 دقیقه</span>             
+                        </span>
+                        <span>
+                            <i class="fas fa-calendar-days"></i>
+                            <span id="study_time_web_development_date">تاریخ انتشار : 2025/02/20</span>
+                        </span>
+                        <span>  
+                            <i class="fas fa-feather"></i>
+                            <span id="study_time_author">نویسنده : محدثه جوکار</span>                        
+                        </span>
+                    </div>
+                    <div class="article-body">
+
+                        <section id="intro">
+                            <h2 id="WebDevelopment_intro_title">مقدمه</h2>
+                            <p id="WebDevelopment_intro_paragraph_1">
+                                توسعه وب امروزه یکی از حوزه‌های کلیدی در دنیای فناوری است که شامل ایجاد و مدیریت وب‌سایت‌ها و اپلیکیشن‌های تحت وب می‌شود. اما توسعه وب تنها به طراحی صفحات زیبا محدود نمی‌شود، بلکه مجموعه‌ای از فناوری‌ها، زبان‌های برنامه‌نویسی، معماری‌ها و استانداردها را در بر می‌گیرد که به صورت یکپارچه برای ارائه تجربه کاربری بهینه کار می‌کنند.
+                            </p>
+                            <p id="WebDevelopment_intro_paragraph_2">
+                                این مقاله به طور تخصصی به مفاهیم اساسی توسعه وب، تفکیک فرانت‌اند و بک‌اند، نقش سرورها و پایگاه‌های داده و استانداردهای مدرن در این حوزه می‌پردازد.
+                            </p>
+                        </section>
+
+                        <section id="web-development">
+                            <h2 id="WebDevelopment_web_development_title">۱. توسعه وب چیست؟</h2>
+                            <p id="WebDevelopment_web_development_paragraph_1">
+                                توسعه وب شامل تمام فرآیندهایی است که برای ایجاد یک وب‌سایت یا اپلیکیشن تحت وب انجام می‌شود. این فرآیندها به دو بخش اصلی تقسیم می‌شوند:
+                            </p>
+                            <ul id="WebDevelopment_web_development_list">
+                                <li id="WebDevelopment_web_development_list_1">✅ توسعه فرانت‌اند (<strong>Frontend Development</strong>): شامل بخش‌هایی است که کاربر آن را مشاهده می‌کند و با آن تعامل دارد.</li>
+                                <li id="WebDevelopment_web_development_list_2">✅ توسعه بک‌اند (<strong>Backend Development</strong>): شامل منطق برنامه، پردازش داده‌ها و تعامل با سرور و پایگاه داده است.</li>
+                            </ul>
+                            <p id="WebDevelopment_web_development_paragraph_2">
+                                همچنین، <strong>DevOps</strong> و استقرار (<strong>Deployment</strong>) نیز بخشی از فرآیند توسعه وب محسوب می‌شوند که به مدیریت، بهینه‌سازی و خودکارسازی فرآیندهای توسعه کمک می‌کنند.
+                            </p>
+                            <p id="WebDevelopment_web_development_paragraph_3" class="example">
+                                توسعه وب شامل مراحل مختلفی از جمله طراحی، کدنویسی، تست و استقرار است. هر یک از این مراحل نیازمند تخصص‌های خاصی است و توسعه‌دهندگان وب باید با تکنولوژی‌ها و ابزارهای مختلفی آشنا باشند تا بتوانند وب‌سایت‌ها و اپلیکیشن‌های کارآمد و جذاب ایجاد کنند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/front&back.jpg" alt="Backend Development">
+                            </div>
+                            <p id="WebDevelopment_web_development_paragraph_4">
+                                توسعه فرانت‌اند، زبان‌هایی مانند <strong>HTML</strong>، <strong>CSS</strong> و <strong>JavaScript</strong> به کار می‌روند تا ساختار، استایل و تعاملات صفحات وب ایجاد شوند. فریمورک‌ها و کتابخانه‌هایی مانند <strong>React</strong>، <strong>Vue.js</strong> و <strong>Angular</strong> نیز به توسعه‌دهندگان کمک می‌کنند تا رابط‌های کاربری پیچیده و تعاملی بسازند.
+                            </p>
+                            <p id="WebDevelopment_web_development_paragraph_5">
+                                توسعه بک‌اند، زبان‌هایی مانند <strong>Node.js</strong>، <strong>Python</strong>، <strong>PHP</strong> و <strong>Java</strong> به کار می‌روند تا منطق برنامه و پردازش داده‌ها را مدیریت کنند. پایگاه‌های داده مانند <strong>MySQL</strong>، <strong>PostgreSQL</strong> و <strong>MongoDB</strong> نیز برای ذخیره و بازیابی اطلاعات استفاده می‌شوند.
+                            </p>
+                            <p id="WebDevelopment_web_development_paragraph_6">
+                                <strong>DevOps</strong> و استقرار (<strong>Deployment</strong>) نیز نقش مهمی در توسعه وب دارند. ابزارهایی مانند <strong>Docker</strong> و <strong>Kubernetes</strong> برای مدیریت کانتینرها و <strong>CI/CD</strong> (ادغام و استقرار مداوم) برای خودکارسازی فرآیندهای توسعه و استقرار به کار می‌روند. این ابزارها به توسعه‌دهندگان کمک می‌کنند تا فرآیندهای توسعه را بهینه‌سازی کرده و به سرعت تغییرات را اعمال کنند.
+                            </p>
+                            <p id="WebDevelopment_web_development_paragraph_7">
+                                برای مطالعه بیشتر در مورد توسعه وب، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_web_development_resources">
+                                <li id="WebDevelopment_web_development_resources_3"><a href="https://www.freecodecamp.org" target="_blank">freeCodeCamp</a></li>
+                                <li id="WebDevelopment_web_development_resources_2"><a href="https://web.dev" target="_blank">Google Web.dev</a></li>
+                                <li id="WebDevelopment_web_development_resources_1"><a href="https://developer.mozilla.org/en-US/docs/Learn/Front-end_web_developer" target="_blank">MDN Web Docs - Frontend Development</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="frontend">
+                            <h2 id="WebDevelopment_frontend_title">۲. فرانت‌اند، تعامل مستقیم با کاربران</h2>
+                            <p id="WebDevelopment_frontend_paragraph_1">
+                                فرانت‌اند بخشی از توسعه وب است که مستقیماً با کاربران در تعامل است. این بخش شامل طراحی و پیاده‌سازی رابط‌های کاربری است که کاربران می‌توانند با آن‌ها تعامل داشته باشند.
+                            </p>
+                            <h3 id="WebDevelopment_frontend_subtitle_1">زبان‌ها و فناوری‌های اصلی فرانت‌اند:</h3>
+                            <ul id="WebDevelopment_frontend_list_1">
+                                <li id="WebDevelopment_frontend_list_1_1">📄 <strong>HTML5</strong>: زبان نشانه‌گذاری برای ساختاردهی محتوا</li>
+                                <li id="WebDevelopment_frontend_list_1_2">🎨 <strong>CSS3</strong>: استایل‌دهی و طراحی صفحات</li>
+                                <li id="WebDevelopment_frontend_list_1_3">💻 <strong>JavaScript (ES6+)</strong>: زبان برنامه‌نویسی برای ایجاد تعاملات داینامیک</li>
+                            </ul>
+                            <p id="WebDevelopment_frontend_paragraph_2" class="example">
+                                <strong>HTML5</strong> برای ساختاردهی محتوا و ایجاد عناصر مختلف در صفحات وب استفاده می‌شود. <strong>CSS3</strong> برای استایل‌دهی و طراحی صفحات به کار می‌رود و به توسعه‌دهندگان امکان می‌دهد تا ظاهر وب‌سایت‌ها را بهبود بخشند. <strong>JavaScript (ES6+)</strong> نیز برای ایجاد تعاملات داینامیک و پویا در صفحات وب استفاده می‌شود.
+                            </p>
+                            <h3 id="WebDevelopment_frontend_subtitle_2">فریمورک‌ها و کتابخانه‌های محبوب:</h3>
+                            <ul id="WebDevelopment_frontend_list_2">
+                                <li id="WebDevelopment_frontend_list_2_1">⚛️ <strong>React.js</strong>: برای ساخت رابط‌های کاربری تعاملی</li>
+                                <li id="WebDevelopment_frontend_list_2_2">🖖 <strong>Vue.js</strong>: مناسب برای پروژه‌های سبک و انعطاف‌پذیر</li>
+                                <li id="WebDevelopment_frontend_list_2_3"> <strong>Angular</strong> 🅰️: گزینه‌ای قوی برای توسعه نرم‌افزارهای پیچیده</li>
+                                <li id="WebDevelopment_frontend_list_2_4">🎨 <strong>Bootstrap</strong> / <strong>Tailwind CSS</strong>: ابزارهایی برای استایل‌دهی سریع</li>
+                            </ul>
+                            <p id="WebDevelopment_frontend_paragraph_3" class="example">
+                                <strong>React.js</strong> یکی از محبوب‌ترین کتابخانه‌ها برای ساخت رابط‌های کاربری تعاملی است. <strong>Vue.js</strong> نیز به دلیل سادگی و انعطاف‌پذیری، برای پروژه‌های سبک مناسب است. <strong>Angular</strong> یک فریمورک قوی برای توسعه نرم‌افزارهای پیچیده است. همچنین، ابزارهایی مانند <strong>Bootstrap</strong> و <strong>Tailwind CSS</strong> به توسعه‌دهندگان کمک می‌کنند تا به سرعت و به سادگی استایل‌دهی کنند.
+                            </p>
+                            <h3 id="WebDevelopment_frontend_subtitle_3">چالش‌های فرانت‌اند:</h3>
+                            <ul id="WebDevelopment_frontend_list_3">
+                                <li id="WebDevelopment_frontend_list_3_1">1️⃣ <strong>ریسپانسیو بودن (Responsive Design)</strong>: سازگاری با موبایل، تبلت و دسکتاپ</li>
+                                <li id="WebDevelopment_frontend_list_3_2">2️⃣ <strong>بهینه‌سازی Core Web Vitals</strong>: کاهش زمان بارگذاری و بهبود عملکرد</li>
+                                <li id="WebDevelopment_frontend_list_3_3">3️⃣ <strong>مدیریت وضعیت (State Management)</strong>: استفاده از <strong>Redux</strong>، <strong>Vuex</strong> یا <strong>Context API</strong></li>
+                            </ul>
+                            <p id="WebDevelopment_frontend_paragraph_4" class="example">
+                                یکی از چالش‌های اصلی در توسعه فرانت‌اند، ریسپانسیو بودن طراحی است. توسعه‌دهندگان باید اطمینان حاصل کنند که وب‌سایت‌ها و اپلیکیشن‌ها در تمامی دستگاه‌ها، از جمله موبایل، تبلت و دسکتاپ به درستی نمایش داده شوند. بهینه‌سازی <strong>Core Web Vitals</strong> نیز برای کاهش زمان بارگذاری و بهبود عملکرد صفحات وب بسیار مهم است. مدیریت وضعیت با استفاده از ابزارهایی مانند <strong>Redux</strong>، <strong>Vuex</strong> یا <strong>Context API</strong> نیز از دیگر چالش‌های مهم در توسعه فرانت‌اند است.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/Responsive.jpg" alt="Frontend Development">
+                            </div>
+                            <p id="WebDevelopment_frontend_paragraph_5">
+                                برای مطالعه بیشتر در مورد توسعه فرانت‌اند، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_frontend_resources">
+                                <li id="WebDevelopment_frontend_resources_1">🔗 <a href="https://reactjs.org" target="_blank">React.js</a></li>
+                                <li id="WebDevelopment_frontend_resources_2">🔗 <a href="https://vuejs.org" target="_blank">Vue.js</a></li>
+                                <li id="WebDevelopment_frontend_resources_3">🔗 <a href="https://angular.io" target="_blank">Angular</a></li>
+                                <li id="WebDevelopment_frontend_resources_4">🔗 <a href="https://getbootstrap.com" target="_blank">Bootstrap</a></li>
+                                <li id="WebDevelopment_frontend_resources_5">🔗 <a href="https://tailwindcss.com" target="_blank">Tailwind CSS</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="backend">
+                            <h2 id="WebDevelopment_backend_title">۳. بک‌اند، منطق و پردازش داده‌ها</h2>
+                            <p id="WebDevelopment_backend_paragraph_1">
+                                بک‌اند مسئول پردازش داده‌ها، احراز هویت، ذخیره و بازیابی اطلاعات است. این بخش از توسعه وب شامل منطق برنامه، مدیریت پایگاه داده و ارتباط با سرور است.
+                            </p>
+                            <h3 id="WebDevelopment_backend_subtitle_1">زبان‌های پرکاربرد در بک‌اند:</h3>
+                            <ul id="WebDevelopment_backend_list_1">
+                                <li id="WebDevelopment_backend_list_1_1">🟢 <strong>Node.js (Express.js)</strong>: اجرای کد جاوااسکریپت در سمت سرور</li>
+                                <li id="WebDevelopment_backend_list_1_2">🐍 <strong>Python (Django, Flask)</strong>: محبوب برای پردازش داده و هوش مصنوعی</li>
+                                <li id="WebDevelopment_backend_list_1_3">🐘 <strong>PHP (Laravel, Symfony)</strong>: انتخابی سنتی برای توسعه وب</li>
+                                <li id="WebDevelopment_backend_list_1_4">☕ <strong>Java (Spring Boot)</strong>: مناسب برای پروژه‌های سازمانی</li>
+                                <li id="WebDevelopment_backend_list_1_5">🚀 <strong>Go (Golang)</strong>: سریع و مقیاس‌پذیر</li>
+                            </ul>
+                            <p id="WebDevelopment_backend_paragraph_2" class="example">
+                                <strong>Node.js</strong> با استفاده از <strong>Express.js</strong> به توسعه‌دهندگان امکان می‌دهد تا کد جاوااسکریپت را در سمت سرور اجرا کنند. <strong>Python</strong> با فریمورک‌های <strong>Django</strong> و <strong>Flask</strong> برای پردازش داده و هوش مصنوعی بسیار محبوب است. <strong>PHP</strong> با فریمورک‌های <strong>Laravel</strong> و <strong>Symfony</strong> انتخابی سنتی برای توسعه وب است. <strong>Java</strong> با استفاده از <strong>Spring Boot</strong> برای پروژه‌های سازمانی مناسب است و <strong>Go (Golang)</strong> به دلیل سرعت و مقیاس‌پذیری بالا مورد توجه قرار گرفته است.
+                            </p>
+                            <h3 id="WebDevelopment_backend_subtitle_2">پایگاه‌های داده:</h3>
+                            <ul id="WebDevelopment_backend_list_2">
+                                <li id="WebDevelopment_backend_list_2_1">✅ <strong>SQL (ساختاریافته)</strong>: <strong>MySQL</strong>, <strong>PostgreSQL</strong>, <strong>Microsoft SQL Server</strong></li>
+                                <li id="WebDevelopment_backend_list_2_2">✅ <strong>NoSQL (غیرساختاریافته)</strong>: <strong>MongoDB</strong>, <strong>Firebase</strong>, <strong>Cassandra</strong></li>
+                            </ul>
+                            <p id="WebDevelopment_backend_paragraph_3" class="example">
+                                پایگاه‌های داده <strong>SQL</strong> مانند <strong>MySQL</strong>، <strong>PostgreSQL</strong> و <strong>Microsoft SQL Server</strong> برای ذخیره و بازیابی داده‌های ساختاریافته استفاده می‌شوند. پایگاه‌های داده <strong>NoSQL</strong> مانند <strong>MongoDB</strong>، <strong>Firebase</strong> و <strong>Cassandra</strong> برای داده‌های غیرساختاریافته و مقیاس‌پذیری بالا مناسب هستند.
+                            </p>
+                            <h3 id="WebDevelopment_backend_subtitle_3">چالش‌های بک‌اند:</h3>
+                            <ul id="WebDevelopment_backend_list_3">
+                                <li id="WebDevelopment_backend_list_3_1">1️⃣ <strong>مدیریت مقیاس‌پذیری (Scalability)</strong>: ایجاد سیستمی که بتواند با افزایش تعداد کاربران و حجم داده‌ها به خوبی کار کند.</li>
+                                <li id="WebDevelopment_backend_list_3_2">2️⃣ <strong>افزایش سرعت پردازش و بهینه‌سازی کوئری‌های پایگاه داده</strong>: بهبود عملکرد سیستم با کاهش زمان پاسخگویی و بهینه‌سازی کوئری‌ها.</li>
+                                <li id="WebDevelopment_backend_list_3_3">3️⃣ <strong>مدیریت امنیت و جلوگیری از حملات سایبری</strong>: اطمینان از امنیت داده‌ها و جلوگیری از حملات سایبری مانند <strong>SQL Injection</strong> و <strong>Cross-Site Scripting (XSS)</strong>.</li>
+                            </ul>
+                            <p id="WebDevelopment_backend_paragraph_4" class="example">
+                                یکی از چالش‌های اصلی در توسعه بک‌اند، مدیریت مقیاس‌پذیری است. توسعه‌دهندگان باید سیستمی ایجاد کنند که بتواند با افزایش تعداد کاربران و حجم داده‌ها به خوبی کار کند. افزایش سرعت پردازش و بهینه‌سازی کوئری‌های پایگاه داده نیز برای بهبود عملکرد سیستم بسیار مهم است. مدیریت امنیت و جلوگیری از حملات سایبری نیز از دیگر چالش‌های مهم در توسعه بک‌اند است.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/webdevelopmend.jpg" alt="Web Development Process">
+                            </div>
+                            <p id="WebDevelopment_backend_paragraph_5">
+                                برای مطالعه بیشتر در مورد توسعه بک‌اند، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_backend_resources">
+                                <li id="WebDevelopment_backend_resources_1">🔗 <a href="https://nodejs.org" target="_blank">Node.js</a></li>
+                                <li id="WebDevelopment_backend_resources_2">🔗 <a href="https://www.djangoproject.com" target="_blank">Django</a></li>
+                                <li id="WebDevelopment_backend_resources_3">🔗 <a href="https://laravel.com" target="_blank">Laravel</a></li>
+                                <li id="WebDevelopment_backend_resources_4">🔗 <a href="https://spring.io/projects/spring-boot" target="_blank">Spring Boot</a></li>
+                                <li id="WebDevelopment_backend_resources_5">🔗 <a href="https://golang.org" target="_blank">Go (Golang)</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="servers">
+                            <h2 id="WebDevelopment_servers_title">۴. نقش سرورها در توسعه وب</h2>
+                            <p id="WebDevelopment_servers_paragraph_1">
+                                سرورها مسئول مدیریت درخواست‌های کاربران، پردازش داده‌ها و ارسال پاسخ هستند. این بخش از توسعه وب شامل مدیریت منابع، پردازش درخواست‌ها و ارائه پاسخ‌های مناسب به کاربران است.
+                            </p>
+                            <h3 id="WebDevelopment_servers_subtitle_1">انواع سرورها:</h3>
+                            <ul id="WebDevelopment_servers_list_1">
+                                <li id="WebDevelopment_servers_list_1_1">🖥️ <strong>سرورهای اختصاصی (Dedicated Servers)</strong>: منابع سخت‌افزاری اختصاصی برای پروژه‌های بزرگ</li>
+                                <li id="WebDevelopment_servers_list_1_2">☁️ <strong>سرورهای ابری (Cloud Servers)</strong>: مقیاس‌پذیر و منعطف (AWS, Google Cloud, DigitalOcean)</li>
+                                <li id="WebDevelopment_servers_list_1_3">🌐 <strong>سرورهای اشتراکی (Shared Hosting)</strong>: ارزان‌تر ولی مناسب برای وب‌سایت‌های کوچک</li>
+                            </ul>
+                            <p id="WebDevelopment_servers_paragraph_2" class="example">
+                                ☁️<strong>سرورهای اختصاصی</strong> منابع سخت‌افزاری اختصاصی را برای پروژه‌های بزرگ فراهم می‌کنند که نیاز به عملکرد بالا و امنیت بیشتری دارند. <strong>سرورهای ابری</strong> به دلیل مقیاس‌پذیری و انعطاف‌پذیری بالا، برای پروژه‌هایی که نیاز به تغییرات سریع و منابع متغیر دارند، مناسب هستند. <strong>سرورهای اشتراکی</strong> گزینه‌ای ارزان‌تر برای وب‌سایت‌های کوچک هستند که منابع سرور را با سایر وب‌سایت‌ها به اشتراک می‌گذارند.
+                            </p>
+                            <h3 id="WebDevelopment_servers_subtitle_2">پروتکل‌های ارتباطی مهم:</h3>
+                            <ul id="WebDevelopment_servers_list_2">
+                                <li id="WebDevelopment_servers_list_2_1">🔒 <strong>HTTP/HTTPS</strong>: ارسال و دریافت داده بین کلاینت و سرور</li>
+                                <li id="WebDevelopment_servers_list_2_2">🔒<strong>WebSockets</strong>: ارتباط بلادرنگ بین کاربر و سرور</li>
+                                <li id="WebDevelopment_servers_list_2_3">🔒 <strong>RESTful API</strong> و <strong>GraphQL</strong>: دو روش محبوب برای تبادل داده</li>
+                            </ul>
+                            <p id="WebDevelopment_servers_paragraph_3" class="example">
+                                پروتکل <strong>HTTP/HTTPS</strong> برای ارسال و دریافت داده بین کلاینت و سرور استفاده می‌شود. <strong>WebSockets</strong> امکان ارتباط بلادرنگ بین کاربر و سرور را فراهم می‌کند که برای برنامه‌های چت و بازی‌های آنلاین بسیار مفید است. <strong>RESTful API</strong> و <strong>GraphQL</strong> دو روش محبوب برای تبادل داده بین کلاینت و سرور هستند که هر کدام مزایا و معایب خاص خود را دارند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/240_F_464436283_243xUlDfeMfCxG0Iw4vgaUEs8BvxqlwJ.jpg" alt="Server Architecture">
+                                <figcaption>معماری سرور</figcaption>
+                            </div>
+                            <p id="WebDevelopment_servers_paragraph_4">
+                                سرورها نقش حیاتی در توسعه وب دارند و بدون آن‌ها، وب‌سایت‌ها و اپلیکیشن‌ها نمی‌توانند به درستی کار کنند. انتخاب نوع سرور و پروتکل‌های ارتباطی مناسب می‌تواند تأثیر زیادی بر عملکرد و تجربه کاربری داشته باشد. برای مطالعه بیشتر در مورد سرورها و پروتکل‌های ارتباطی، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_servers_resources">
+                                <li id="WebDevelopment_servers_resources_1">🔗 <a href="https://aws.amazon.com" target="_blank">AWS</a></li>
+                                <li id="WebDevelopment_servers_resources_2">🔗 <a href="https://cloud.google.com" target="_blank">Google Cloud</a></li>
+                                <li id="WebDevelopment_servers_resources_3">🔗 <a href="https://www.digitalocean.com" target="_blank">DigitalOcean</a></li>
+                                <li id="WebDevelopment_servers_resources_4">🔗 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP" target="_blank">MDN Web Docs - HTTP</a></li>
+                                <li id="WebDevelopment_servers_resources_5">🔗 <a href="https://graphql.org" target="_blank">GraphQL</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="devops">
+                            <h2 id="WebDevelopment_devops_title">۵. استقرار (Deployment) و DevOps</h2>
+                            <p id="WebDevelopment_devops_paragraph_1">
+                                از توسعه، وب‌سایت یا اپلیکیشن باید به سرور منتقل و مدیریت شود. این فرآیند شامل استقرار کد، مدیریت منابع و اطمینان از عملکرد صحیح سیستم است.
+                            </p>
+                            <h3 id="WebDevelopment_devops_subtitle_1">ابزارهای DevOps محبوب:</h3>
+                            <ul id="WebDevelopment_devops_list_1">
+                                <li id="WebDevelopment_devops_list_1_1">🐳 <strong>Docker</strong>: اجرای برنامه‌ها در محیط‌های ایزوله‌شده</li>
+                                <li id="WebDevelopment_devops_list_1_2">☸️ <strong>Kubernetes</strong>: مدیریت کانتینرها در مقیاس بزرگ</li>
+                                <li id="WebDevelopment_devops_list_1_3">🔄 <strong>CI/CD (Jenkins, GitHub Actions)</strong>: خودکارسازی تست و استقرار</li>
+                            </ul>
+                            <p id="WebDevelopment_devops_paragraph_2" class="example">
+                                <strong>Docker</strong> به توسعه‌دهندگان امکان می‌دهد تا برنامه‌ها را در محیط‌های ایزوله‌شده اجرا کنند که این امر باعث کاهش مشکلات ناشی از تفاوت‌های محیطی می‌شود. <strong>Kubernetes</strong> برای مدیریت کانتینرها در مقیاس بزرگ استفاده می‌شود و به توسعه‌دهندگان کمک می‌کند تا برنامه‌های خود را به صورت مقیاس‌پذیر و قابل اعتماد اجرا کنند. ابزارهای <strong>CI/CD</strong> مانند <strong>Jenkins</strong> و <strong>GitHub Actions</strong> نیز برای خودکارسازی فرآیندهای تست و استقرار به کار می‌روند.
+                            </p>
+                            <h3 id="WebDevelopment_devops_subtitle_2">روش‌های دیپلویمنت:</h3>
+                            <ul id="WebDevelopment_devops_list_2">
+                                <li id="WebDevelopment_devops_list_2_1">✅ <strong>Continuous Integration (CI)</strong>: تست و ادغام مداوم</li>
+                                <li id="WebDevelopment_devops_list_2_2">✅ <strong>Continuous Deployment (CD)</strong>: استقرار خودکار نسخه‌های جدید</li>
+                                <li id="WebDevelopment_devops_list_2_3">✅ <strong>Load Balancing</strong>: توزیع درخواست‌ها بین چند سرور برای عملکرد بهتر</li>
+                            </ul>
+                            <p id="WebDevelopment_devops_paragraph_3" class="example">
+                                <strong>Continuous Integration (CI)</strong> به توسعه‌دهندگان امکان می‌دهد تا کدهای خود را به صورت مداوم تست و ادغام کنند که این امر باعث کاهش مشکلات ناشی از ادغام کدهای مختلف می‌شود. <strong>Continuous Deployment (CD)</strong> نیز فرآیند استقرار خودکار نسخه‌های جدید را فراهم می‌کند که این امر باعث افزایش سرعت توسعه و کاهش زمان عرضه به بازار می‌شود. <strong>Load Balancing</strong> نیز برای توزیع درخواست‌ها بین چند سرور به کار می‌رود که این امر باعث بهبود عملکرد و افزایش قابلیت اطمینان سیستم می‌شود.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/DevOps+Blueprint.jpg" alt="DevOps and Deployment" width="50%" height="auto">
+                            </div>
+                            <p id="WebDevelopment_devops_paragraph_4">
+                                استقرار و DevOps نقش حیاتی در توسعه وب دارند و بدون آن‌ها، وب‌سایت‌ها و اپلیکیشن‌ها نمی‌توانند به درستی کار کنند. انتخاب ابزارها و روش‌های مناسب برای استقرار و مدیریت منابع می‌تواند تأثیر زیادی بر عملکرد و تجربه کاربری داشته باشد. برای مطالعه بیشتر در مورد استقرار و DevOps، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_devops_resources">
+                                <li id="WebDevelopment_devops_resources_1">🔗 <a href="https://www.docker.com" target="_blank">Docker</a></li>
+                                <li id="WebDevelopment_devops_resources_2">🔗 <a href="https://kubernetes.io" target="_blank">Kubernetes</a></li>
+                                <li id="WebDevelopment_devops_resources_3">🔗 <a href="https://www.jenkins.io" target="_blank">Jenkins</a></li>
+                                <li id="WebDevelopment_devops_resources_4">🔗 <a href="https://github.com/features/actions" target="_blank">GitHub Actions</a></li>
+                                <li id="WebDevelopment_devops_resources_5">🔗 <a href="https://aws.amazon.com/elasticloadbalancing/" target="_blank">AWS Load Balancing</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="security">
+                            <h2 id="WebDevelopment_security_title">۶. امنیت در توسعه وب</h2>
+                            <p id="WebDevelopment_security_paragraph_1">
+                                امنیت وب یکی از مهم‌ترین جنبه‌های توسعه است. تهدیدهای رایج شامل موارد زیر است:
+                            </p>
+                            <h3 id="WebDevelopment_security_subtitle_1">🚨<strong>SQL Injection</strong>: حمله از طریق ورودی‌های ناامن</h3>
+                            <p id="WebDevelopment_security_paragraph_2">
+                                <strong>SQL Injection</strong> یکی از رایج‌ترین حملات است که از طریق ورودی‌های ناامن انجام می‌شود. مهاجمان با وارد کردن کدهای مخرب در ورودی‌های کاربر، می‌توانند به پایگاه داده دسترسی پیدا کنند و اطلاعات حساس را استخراج یا تغییر دهند.
+                            </p>
+                            <h3 id="WebDevelopment_security_subtitle_2">🚨<strong>Cross-Site Scripting (XSS)</strong>: اجرای کد مخرب در صفحات وب</h3>
+                            <p id="WebDevelopment_security_paragraph_3">
+                                <strong>Cross-Site Scripting (XSS)</strong> حمله‌ای است که در آن مهاجمان کدهای مخرب را در صفحات وب اجرا می‌کنند. این کدها می‌توانند اطلاعات حساس کاربران را سرقت کنند یا عملیات‌های غیرمجاز انجام دهند.
+                            </p>
+                            <h3 id="WebDevelopment_security_subtitle_3">🚨<strong>Cross-Site Request Forgery (CSRF)</strong>: ارسال درخواست جعلی به سرور</h3>
+                            <p id="WebDevelopment_security_paragraph_4">
+                                <strong>Cross-Site Request Forgery (CSRF)</strong> حمله‌ای است که در آن مهاجمان با ارسال درخواست‌های جعلی به سرور، عملیات‌های غیرمجاز را انجام می‌دهند. این حمله معمولاً از طریق لینک‌های مخرب یا فرم‌های جعلی انجام می‌شود.
+                            </p>
+                            <h3 id="WebDevelopment_security_subtitle_4">راهکارهای افزایش امنیت:</h3>
+                            <ul id="WebDevelopment_security_list_1">
+                                <li id="WebDevelopment_security_list_1_1">🔑 استفاده از <strong>JWT</strong> و <strong>OAuth</strong> برای احراز هویت امن</li>
+                                <li id="WebDevelopment_security_list_1_2">🔒 رمزگذاری داده‌ها با <strong>SSL</strong> و <strong>HTTPS</strong></li>
+                                <li id="WebDevelopment_security_list_1_3">🛡️ محدود کردن دسترسی کاربران با <strong>Role-Based Access Control (RBAC)</strong></li>
+                                <li id="WebDevelopment_security_list_1_4">🧹 اعتبارسنجی و پاکسازی ورودی‌های کاربر</li>
+                                <li id="WebDevelopment_security_list_1_5">🛡️ استفاده از <strong>Content Security Policy (CSP)</strong> برای جلوگیری از اجرای کدهای مخرب</li>
+                            </ul>
+                            <p id="WebDevelopment_security_paragraph_5" class="example">
+                                استفاده از <strong>JWT</strong> و <strong>OAuth</strong> برای احراز هویت امن، رمزگذاری داده‌ها با <strong>SSL</strong> و <strong>HTTPS</strong> و محدود کردن دسترسی کاربران با <strong>Role-Based Access Control (RBAC)</strong> از جمله راهکارهای مهم برای افزایش امنیت وب هستند. همچنین، اعتبارسنجی و پاکسازی ورودی‌های کاربر و استفاده از <strong>Content Security Policy (CSP)</strong> نیز می‌تواند به جلوگیری از حملات کمک کند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/cyber-security-2296269_1280.jpg" alt="Web Security" width="60%">
+                                <figcaption>امنیت در توسعه وب</figcaption>
+                            </div>
+                            <p id="WebDevelopment_security_paragraph_6">
+                                امنیت وب نقش حیاتی در توسعه وب دارد و بدون آن، وب‌سایت‌ها و اپلیکیشن‌ها نمی‌توانند به درستی کار کنند. انتخاب راهکارهای مناسب برای افزایش امنیت می‌تواند تأثیر زیادی بر عملکرد و تجربه کاربری داشته باشد. برای مطالعه بیشتر در مورد امنیت وب، می‌توانید به منابع زیر مراجعه کنید:
+                            </p>
+                            <ul id="WebDevelopment_security_resources">
+                                <li id="WebDevelopment_security_resources_1">🔗 <a href="https://owasp.org" target="_blank">OWASP</a></li>
+                                <li id="WebDevelopment_security_resources_2">🔗 <a href="https://jwt.io" target="_blank">JWT</a></li>
+                                <li id="WebDevelopment_security_resources_3">🔗 <a href="https://oauth.net" target="_blank">OAuth</a></li>
+                                <li id="WebDevelopment_security_resources_4">🔗 <a href="https://letsencrypt.org" target="_blank">Let's Encrypt</a></li>
+                                <li id="WebDevelopment_security_resources_5">🔗 <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP" target="_blank">Content Security Policy (CSP)</a></li>
+                            </ul>
+                        </section>
+
+                        <section id="trends">
+                            <h2 id="WebDevelopment_trends_title">۷. ترندهای جدید در توسعه وب</h2>
+                            <p id="WebDevelopment_trends_paragraph_1">
+                                توسعه وب به سرعت در حال تغییر است و ترندهای جدیدی در این حوزه ظهور می‌کنند که می‌توانند تجربه کاربری را بهبود بخشند و امنیت و عملکرد وب‌سایت‌ها را افزایش دهند. در ادامه به برخی از این ترندها می‌پردازیم:
+                            </p>
+                            <ul id="WebDevelopment_trends_list_1">
+                                <li id="WebDevelopment_trends_list_1_1">🔹<strong>هوش مصنوعی در وب</strong>: افزایش تعامل کاربر و بهینه‌سازی تجربه کاربری. استفاده از هوش مصنوعی می‌تواند به توسعه‌دهندگان کمک کند تا تجربه کاربری بهتری ارائه دهند و تعاملات کاربر را بهبود بخشند.</li>
+                                <li id="WebDevelopment_trends_list_1_2">🔹<strong>Web3 و بلاکچین</strong>: تمرکززدایی داده‌ها و افزایش امنیت. Web3 و بلاکچین به توسعه‌دهندگان امکان می‌دهند تا برنامه‌های غیرمتمرکز ایجاد کنند که امنیت و حریم خصوصی کاربران را افزایش می‌دهد.</li>
+                                <li id="WebDevelopment_trends_list_1_3">🔹<strong>Progressive Web Apps (PWA)</strong>: ایجاد اپلیکیشن‌های تحت وب با تجربه‌ای مشابه اپ‌های بومی. PWAها به توسعه‌دهندگان امکان می‌دهند تا وب‌سایت‌هایی ایجاد کنند که به صورت آفلاین کار کنند و تجربه‌ای مشابه با اپلیکیشن‌های بومی ارائه دهند.</li>
+                            </ul>
+                            <div class="image-container">
+                                <img src="image/istockphoto-1477990193-612x612.jpg" alt="Web Development Trends">
+                            </div>
+                            <h2 id="WebDevelopment_trends_subtitle_1">📌منابع پیشنهادی برای مطالعه بیشتر:</h2>
+                            <ul id="WebDevelopment_trends_resources">
+                                <li id="WebDevelopment_trends_resources_1">📖 <a href="https://developer.mozilla.org" target="_blank">MDN Web Docs</a> - مرجع اصلی توسعه وب</li>
+                                <li id="WebDevelopment_trends_resources_2">📖 <a href="https://frontendmasters.com" target="_blank">Frontend Masters</a> - دوره‌های تخصصی فرانت‌اند</li>
+                                <li id="WebDevelopment_trends_resources_3">📖 <a href="https://web.dev" target="_blank">Google Web.dev</a> - ابزارهای بهینه‌سازی وب</li>
+                            </ul>
+                        </section>
+
+                        <div id="conclusion">
+                            <h2 id="WebDevelopment_conclusion_title">نتیجه‌گیری</h2>
+                            <p id="WebDevelopment_conclusion_paragraph_1">
+                                توسعه وب ترکیبی از مهارت‌های طراحی، برنامه‌نویسی، امنیت و مدیریت سرور است. برای موفقیت در این حوزه، یادگیری فرانت‌اند، بک‌اند، <strong>DevOps</strong> و امنیت ضروری است. توسعه‌دهندگان حرفه‌ای همیشه در حال یادگیری تکنولوژی‌های جدید هستند و به بهینه‌سازی عملکرد و امنیت اهمیت ویژه‌ای می‌دهند.
+                            </p>
+                            <p id="WebDevelopment_conclusion_paragraph_2">
+                                توسعه‌دهندگان وب باید با آخرین تکنولوژی‌ها و ترندهای صنعت آشنا باشند تا بتوانند بهترین راه‌حل‌ها را برای پروژه‌های خود انتخاب کنند. همچنین، توانایی حل مسائل پیچیده و ارائه راه‌حل‌های نوآورانه از جمله مهارت‌های ضروری برای موفقیت در این حوزه است.
+                            </p>
+                            <p id="WebDevelopment_conclusion_paragraph_3">
+                                اگر به دنبال یادگیری عمیق‌تر هستید، مطالعه مستندات رسمی و شرکت در دوره‌های تخصصی می‌تواند مسیر رشد شما را هموار کند. منابعی مانند <strong>MDN Web Docs</strong>، <strong>Frontend Masters</strong> و <strong>Google Web.dev</strong> می‌توانند به شما در این مسیر کمک کنند.
+                            </p>
+                            <p id="WebDevelopment_conclusion_paragraph_4">
+                                موفقیت در توسعه وب نیازمند ترکیبی از مهارت‌های فنی و نرم، توانایی حل مسئله و یادگیری مداوم است. با توجه به سرعت تغییرات در دنیای فناوری، توسعه‌دهندگان وب باید همواره به دنبال یادگیری و به‌روز نگه داشتن دانش خود باشند تا بتوانند با چالش‌های جدید روبرو شوند و راه‌حل‌های نوآورانه ارائه دهند.
+                            </p>
+                        </div>
+
+                    </div>
+                </main>
+            </div>
+
+            <div class="related-articles_container">
+
+                <div class="title-container">
+                    <div class="line"></div>
+                    <h2 id="related_articles_related_article_title">مقالات مرتبط</h2>
+                    <div class="line"></div>
+                </div>
+                <section class="related-articles">
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-creative.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_1_title">خلاقیت، کلید موفقیت در دنیای مدرن</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_creativity">ایده‌های جدید</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_creativity-author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article2.html" class="categories__btn" id="related_articles_related_article_1_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-ui-enginier.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_2_title">مهندس رابط کاربری</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_ui-rolls">نقش و مسئولیت‌ها و مهارت‌های کلیدی</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_ui-author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article2.html" class="categories__btn" id="related_articles_related_article_2_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Senior-Frontendjpg.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_3_title">مهندس ارشد فرانت‌اند ؛ نقش کلیدی در توسعه وب مدرن</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_frontend-engineer">الگوهای معماری مدرن</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_frontend-engineer_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article3.html" class="categories__btn" id="related_articles_related_article_3_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Artificial Intelligence.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_5_title">هوش مصنوعی؛ نیروی محرک تحول در تکنولوژی و کسب‌وکار</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_Ai_rolls">تحول در تکنولوژی</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_Ai_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article5.html" class="categories__btn" id="related_articles_related_article_5_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Frontend-Development-jpg.jpeg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_6_title">توسعه فرانت‌اند: از طراحی رابط کاربری تا کدنویسی بهینه با استفاده از فریم‌ورک‌های پیشرفته </span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_Optimized_coding">کدنویسی بهینه</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_Optimized_coding_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article6.html" class="categories__btn" id="related_articles_related_article_6_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+            <!-- <section class="related-articles">
+                 <h2 id="related_articles_related_article_title">مقالات مرتبط</h2>
+                <div class="article-cards">
+
+                    <div class="article-card" id="related_article_1">
+                        <h3 id="related_articles_related_article_1_title">خلاقیت، کلید موفقیت در دنیای مدرن</h3>
+                        <a href="./index.html" class="read-more" id="related_articles_related_article_1_link">ادامه مطلب</a>
+                    </div>
+
+
+                    <div class="article-card" id="related_article_2">
+                        <h3 id="related_articles_related_article_2_title">مهندس رابط کاربری</h3>
+                        <a href="./article2.html" class="read-more" id="related_articles_related_article_2_link">ادامه مطلب</a>
+                    </div>
+                    
+                    <div class="article-card" id="related_article_3">
+                        <h3 id="related_articles_related_article_3_title">مهندس ارشد فرانت‌اند ؛ نقش کلیدی در توسعه وب مدرن</h3>
+                        <a href="./article3.html" class="read-more" id="related_articles_related_article_3_link">ادامه مطلب</a>
+                    </div>
+                    
+                    <div class="article-card" id="related_article_5">
+                        <h3 id="related_articles_related_article_5_title">هوش مصنوعی؛ نیروی محرک تحول در تکنولوژی و کسب‌وکار</h3>
+                        <a href="./article5.html" class="read-more" id="related_articles_related_article_5_link">ادامه مطلب</a>
+                    </div>
+
+                    <div class="article-card" id="related_article_6">
+                        <h3 id="related_articles_related_article_6_title">توسعه فرانت‌اند: از طراحی رابط کاربری تا کدنویسی بهینه با استفاده از فریم‌ورک‌های پیشرفته</h3>
+                        <a href="./article6.html" class="read-more" id="related_articles_related_article_6_link">ادامه مطلب</a>
+                    </div>
+
+                </div>
+            </section>  -->
+            
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="newsletter">
+                        <h4 id="newsletter_title">عضویت در خبرنامه</h4>
+                        <form id="newsletter-form">
+                            <input type="email" id="newsletter_placeholder" placeholder="ایمیل خود را وارد کنید" required>
+                            <button type="submit" id="newsletter_button">ثبت‌نام</button>
+                        </form>
+                        <p id="newsletter_success_message" style="color: green;">ثبت‌نام شما با موفقیت انجام شد!</p>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p id="newsletter_text">© 2025 تمامی حقوق محفوظ است</p>
+                </div>
+            </footer>
+        </div>
+
+    </article>
+
+    <script src="js/app.js"></script>
+    <script src="js/lang.js"></script>
+
+</body>
+</html>
+

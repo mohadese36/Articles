@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title data-title-key="frontendDevelopment">توسعه فرانت‌اند</title>
+
+</head>
+<body>
+    <article>
+        <div class="header">
+            <div class="logo_container">
+                <img src="image/my-purple_lofo.png" alt="">
+            </div>
+            <div class="language-switcher " id="change-language2">
+                 <button class="button"></button>
+            </div>
+    
+        </div>
+
+        <div class="wrapper">
+            
+            <div class="container">
+                <div class="nav-container">
+
+                    <button class="btn">
+                        <div class="menu-text_container">
+                            <i class="fa-solid fa-chevron-down"></i> 
+                            <span id="navigation_quick_read_button" class="menu-text">مطالعه سریع</span>
+                        </div>
+                    </button>
+
+                    <nav class="sidebar">
+                        
+                        <div class="row">
+                            <div class="top_sidebar">
+                          <div class="sidebar-image-container">
+                                <img src="image/circle-word-long.svg" alt="SVG Icon" />
+                                <span id="navigation_quick_read_sidebar">مطالعه سریع</span>
+                            </div>
+                            </div>                        
+                        </div>
+                        
+                        <div class="row">
+                            <div class="sidebar_list">
+                                <ul>
+                                    <li><a href="#intro" id="navigation_intro">مقدمه</a></li>
+                                    <li><a href="#javascript" id="navigation_javascript">JavaScript: قلب تپنده وب</a></li>
+                                    <li><a href="#typescript" id="navigation_typescript">TypeScript: تایپ‌گذاری ایمن</a></li>
+                                    <li><a href="#html-css" id="navigation_html_css">HTML & CSS: پایه‌گذار طراحی مدرن وب</a></li>
+                                    <li><a href="#react" id="navigation_react">React: ساخت کامپوننت‌های پویا</a></li>
+                                    <li><a href="#nextjs" id="navigation_nextjs">Next.js: فریم‌ورک پیشرفته برای توسعه</a></li>
+                                    <li><a href="#conclusion" id="navigation_conclusion">نتیجه‌گیری</a></li>
+                                </ul>                           
+                            </div>
+                        </div>
+    
+                        <div class="row">
+                            <div class="social-icons">
+                                <a href="https://github.com/mohadese36" target="_blank" class="social-icon">
+                                <i class="fab fa-github"></i>
+                                </a>
+                                
+                                <a href="https://www.linkedin.com/in/pania-fakhri-6bab85238" target="_blank" class="social-icon">
+                                <i class="fab fa-linkedin"></i>
+                                </a>
+                                
+                                <a href="https://www.instagram.com/pania_fakhri/" target="_blank" class="social-icon">
+                                <i class="fab fa-instagram"></i>
+                                </a>       
+                            </div>
+                        </div>
+        
+        
+                    </nav>
+                </div>
+
+                <main class="content">
+
+                    <header class="frontendDevelopment_header">
+                        <h1 id="header_frontend_development">توسعه فرانت‌اند، از طراحی رابط کاربری تا کدنویسی بهینه با استفاده از فریم‌ورک‌های پیشرفته</h1>
+                    </header>
+
+                    <div class="study-time">
+                        <span>
+                            <i class="fas fa-clock"></i>
+                            <span id="study_time_frontend_development_time">مدت زمان مطالعه : 15 دقیقه</span>             
+                        </span>
+                        <span>
+                            <i class="fas fa-calendar-days"></i>
+                            <span id="study_time_frontend_development_date">تاریخ انتشار : 2025/02/20</span>
+                        </span>
+                        <span>  
+                            <i class="fas fa-feather"></i>
+                            <span id="study_time_author">نویسنده : محدثه جوکار</span>                        
+                        </span>
+                    </div>
+
+                    <div class="article-body">
+
+                        <section id="intro">
+                            <h2 id="Frontend_intro_title">مقدمه</h2>
+                            <p id="Frontend_intro_paragraph_1">
+                                توسعه فرانت‌اند به هنر و علم ساخت رابط‌های کاربری برای وب‌سایت‌ها و اپلیکیشن‌های وب اطلاق می‌شود. این فرآیند، به ویژه با ظهور فریم‌ورک‌های پیشرفته و تکنولوژی‌های مدرن مانند JavaScript، TypeScript، React و Next.js، به طرز چشمگیری دستخوش تحول شده است. به عنوان یک توسعه‌دهنده وب و مهندس رابط کاربری، تسلط بر این ابزارها و پیاده‌سازی معماری‌های پیچیده برای ایجاد وب‌سایت‌هایی با عملکرد بالا و مقیاس‌پذیری بالا، ضروری است.
+                            </p>
+                            <p id="Frontend_intro_paragraph_2">
+                                در این مقاله، به بررسی اجزای مختلف این تکنولوژی‌ها و چگونگی ترکیب آن‌ها برای ایجاد تجربه کاربری بی‌نقص پرداخته خواهد شد. همچنین، به اهمیت استفاده از این ابزارها در پروژه‌های بزرگ و پیچیده اشاره خواهد شد.
+                            </p>
+                        </section>
+
+                        <section id="javascript">
+                            <h2 id="Frontend_javascript_title">JavaScript: قلب تپنده وب</h2>
+                            <p id="Frontend_javascript_paragraph_1">
+                                در دنیای توسعه فرانت‌اند، <strong>JavaScript</strong> نقش کلیدی ایفا می‌کند. این زبان برنامه‌نویسی از زمانی که به‌عنوان زبان اصلی در سمت کلاینت برای تعامل با صفحات وب معرفی شد، به ابزاری بنیادین تبدیل گردید. چیزی که بسیاری از توسعه‌دهندگان فرانت‌اند با آن مواجه هستند، چالش‌های عملکردی و مقیاس‌پذیری است که در پروژه‌های پیچیده به‌وجود می‌آید. در این راستا، JavaScript به‌واسطه استفاده از تکنیک‌های مدرن همچون Asynchronous Programming، Promises و Web Workers به یکی از بهترین ابزارها برای حل این مشکلات تبدیل شده است.
+                            </p>
+                            <p id="Frontend_javascript_paragraph_2">
+                                در پروژه‌های بزرگ، برای جلوگیری از پیچیدگی‌ها و مشکلات نگهداری کد، انتخاب ابزارهای مدرن برای ساختاردهی به کد اهمیت زیادی دارد. استفاده از modular JavaScript با کمک ES6+ Modules به این امر کمک می‌کند که کدها به‌راحتی قابل فهم و نگهداری باشند.
+                            </p>
+                            <p id="Frontend_javascript_paragraph_3">
+                                یکی از ویژگی‌های برجسته JavaScript، توانایی آن در ایجاد تعاملات پویا و واکنش‌گرا در صفحات وب است. با استفاده از کتابخانه‌ها و فریم‌ورک‌های مختلف مانند <strong>React</strong>، <strong>Vue.js</strong> و <strong>Angular</strong>، توسعه‌دهندگان می‌توانند رابط‌های کاربری پیچیده و تعاملی بسازند که تجربه کاربری بی‌نظیری ارائه می‌دهند.
+                            </p>
+                            <p id="Frontend_javascript_paragraph_4">
+                                همچنین، JavaScript با استفاده از ابزارهایی مانند <strong>Node.js</strong> به سمت سرور نیز گسترش یافته است، که این امر به توسعه‌دهندگان این امکان را می‌دهد که از یک زبان برنامه‌نویسی برای هر دو سمت کلاینت و سرور استفاده کنند. این ویژگی به کاهش پیچیدگی‌ها و افزایش کارایی پروژه‌ها کمک می‌کند.
+                            </p>
+                            <p id="Frontend_javascript_paragraph_5" class="example">
+                                JavaScript با پشتیبانی از تکنیک‌های مدرن و ابزارهای پیشرفته، به توسعه‌دهندگان این امکان را می‌دهد که وب‌سایت‌ها و اپلیکیشن‌های وب با عملکرد بالا و مقیاس‌پذیری بالا بسازند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/javaScript2jpg.jpg" alt="JavaScript Example">
+                            </div>
+                            <p id="Frontend_javascript_paragraph_6"><em>منبع: <a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></em></p>
+                        </section>
+
+                        <section id="typescript">
+                            <h2 id="Frontend_typescript_title">TypeScript: تایپ‌گذاری ایمن در دنیای جاوااسکریپت</h2>
+                            <p id="Frontend_typescript_paragraph_1">
+                                در بسیاری از پروژه‌های مدرن، <strong>TypeScript</strong> به دلیل مزایای بسیاری که نسبت به JavaScript دارد، مورد استفاده قرار می‌گیرد. از آنجا که JavaScript به صورت داینامیک تایپ است، در پروژه‌های پیچیده ممکن است به مشکلاتی مانند خطاهای تایپی برخورد کنیم. TypeScript، با افزودن سیستم تایپ استاتیک، به توسعه‌دهندگان این امکان را می‌دهد که خطاها را در مراحل اولیه شبیه‌سازی و از بروز مشکلات در زمان اجرا جلوگیری کنند.
+                            </p>
+                            <p id="Frontend_typescript_paragraph_2">
+                                افزودن تایپ‌ها به‌ویژه در پروژه‌های بزرگ که از تکنولوژی‌های پیچیده‌تری مانند <strong>React</strong> یا <strong>Next.js</strong> استفاده می‌کنند، باعث کاهش خطاهای انسانی و افزایش خوانایی کد می‌شود. استفاده از تایپ‌های <strong>interface</strong> و <strong>type alias</strong> در TypeScript به ساخت کدهایی با مقیاس‌پذیری بیشتر کمک می‌کند و از پیچیدگی‌های احتمالی در فرآیندهای پیچیده جلوگیری می‌کند.
+                            </p>
+                            <p id="Frontend_typescript_paragraph_3" class="example">
+                                دیگر از مزایای TypeScript، پشتیبانی از ویژگی‌های مدرن زبان برنامه‌نویسی است که به توسعه‌دهندگان این امکان را می‌دهد که از امکانات جدیدتر و بهینه‌تر استفاده کنند. این ویژگی‌ها شامل <strong>async/await</strong>، <strong>decorators</strong> و <strong>generics</strong> می‌باشد که به بهبود عملکرد و کارایی کد کمک می‌کنند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/TypeScriptjpg.jpg" alt="TypeScript Example">
+                            </div>
+                            <p id="Frontend_typescript_paragraph_4"><em>منبع: <a href="https://www.typescriptlang.org/docs/handbook/intro.html" target="_blank">TypeScript Handbook</a></em></p>
+                        </section>
+
+                        <section id="html-css">
+                            <h2 id="Frontend_html_css_title">HTML & CSS: پایه‌گذار طراحی مدرن وب</h2>
+                            <p id="Frontend_html_css_paragraph_1">
+                                همانطور که می‌دانیم، <strong>HTML</strong> و <strong>CSS</strong> به عنوان پایه‌گذار وب، وظیفه ایجاد ساختار و استایل صفحات وب را بر عهده دارند. اما برای طراحی وب‌سایت‌های مدرن و کاربرپسند، نیاز به تکنیک‌های پیشرفته‌تری مانند <strong>Flexbox</strong>، <strong>Grid Layout</strong> و <strong>CSS Variables</strong> داریم. این تکنیک‌ها به توسعه‌دهندگان این امکان را می‌دهند که وب‌سایت‌هایی واکنش‌گرا و انعطاف‌پذیر بسازند که به‌خوبی در انواع دستگاه‌ها نمایش داده شوند.
+                            </p>
+                            <p id="Frontend_html_css_paragraph_2">
+                                اما چالش واقعی زمانی آغاز می‌شود که از <strong>CSS Preprocessors</strong> مانند <strong>Sass</strong> و <strong>Less</strong> استفاده می‌کنیم. این ابزارها به توسعه‌دهندگان این امکان را می‌دهند که از ویژگی‌هایی مانند متغیرها، توابع و mixins برای کاهش تکرار کد و بهبود ساختار پروژه استفاده کنند.
+                            </p>
+                            <p id="Frontend_html_css_paragraph_3">
+                                دیگر از مزایای استفاده از HTML و CSS، قابلیت ایجاد انیمیشن‌ها و ترنزیشن‌های زیبا است که به تجربه کاربری بهتری منجر می‌شود. با استفاده از <strong>CSS Animations</strong> و <strong>Transitions</strong>، می‌توانیم تعاملات کاربری را بهبود بخشیم و وب‌سایت‌هایی جذاب‌تر و پویا‌تر بسازیم.
+                            </p>
+                            <p id="Frontend_html_css_paragraph_4" class="example">
+                                علاوه بر این، استفاده از <strong>Responsive Design</strong> با کمک <strong>Media Queries</strong> به توسعه‌دهندگان این امکان را می‌دهد که وب‌سایت‌هایی بسازند که به‌طور خودکار با اندازه‌های مختلف صفحه نمایش سازگار شوند. این ویژگی به‌ویژه در دنیای امروز که کاربران از دستگاه‌های مختلفی برای دسترسی به وب‌سایت‌ها استفاده می‌کنند، اهمیت زیادی دارد.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/responsive-concept-illustration_114360-684.jpg" alt="HTML & CSS Example" width="50%">
+                            </div>
+                            <p id="Frontend_html_css_paragraph_5"><em>منبع: <a href="https://css-tricks.com" target="_blank">CSS Tricks</a></em></p>
+                        </section>
+
+                        <section id="react">
+                            <h2 id="Frontend_react_title">React: ساخت کامپوننت‌های پویا و مقیاس‌پذیر</h2>
+                            <p id="Frontend_react_paragraph_1">
+                                React، کتابخانه‌ای جاوااسکریپت از سوی <strong>Facebook</strong>، برای ساخت رابط‌های کاربری پیچیده و تعاملی طراحی شده است. چیزی که React را متمایز می‌کند، سیستم <strong>Virtual DOM</strong> است که به‌طور چشمگیری سرعت و عملکرد اپلیکیشن‌های وب را بهبود می‌بخشد. به‌ویژه زمانی که با <strong>Redux</strong> ترکیب می‌شود، این ابزار قدرت مدیریت وضعیت‌های پیچیده و تعاملات متعدد در یک برنامه را به طرز مؤثری فراهم می‌آورد.
+                            </p>
+                            <p id="Frontend_react_paragraph_2">
+                                یکی از اصول اساسی در توسعه با React، استفاده از <strong>Component-Based Architecture</strong> است. با تفکیک رابط کاربری به کامپوننت‌های مستقل و قابل استفاده مجدد، می‌توان از پیچیدگی‌ها کاسته و روند توسعه را سریع‌تر و بهینه‌تر کرد. این رویکرد به توسعه‌دهندگان این امکان را می‌دهد که کدهای خود را به بخش‌های کوچکتر و قابل مدیریت تقسیم کنند.
+                            </p>
+                            <p id="Frontend_react_paragraph_3">
+                                دیگر از ویژگی‌های برجسته React، قابلیت <strong>Server-Side Rendering (SSR)</strong> است که با استفاده از فریم‌ورک‌هایی مانند <strong>Next.js</strong> امکان‌پذیر می‌شود. این ویژگی به بهبود SEO و کاهش زمان بارگذاری صفحات کمک می‌کند.
+                            </p>
+                            <p id="Frontend_react_paragraph_4" class="example">
+                                React همچنین از <strong>Hooks</strong> پشتیبانی می‌کند که به توسعه‌دهندگان این امکان را می‌دهد که از وضعیت و سایر ویژگی‌های React بدون نیاز به نوشتن کلاس‌ها استفاده کنند. این ویژگی‌ها شامل <strong>useState</strong>، <strong>useEffect</strong> و <strong>useContext</strong> می‌باشد که به بهبود عملکرد و سادگی کد کمک می‌کنند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/react.jpg" alt="React Example" width="50%">
+                            </div>
+                            <p id="Frontend_react_paragraph_5"><em>منبع: <a href="https://reactjs.org/docs/getting-started.html" target="_blank">React Docs</a></em></p>
+                        </section>
+
+                        <section id="nextjs">
+                            <h2 id="Frontend_nextjs_title">Next.js: فریم‌ورک پیشرفته برای توسعه اپلیکیشن‌های مقیاس‌پذیر</h2>
+                            <p id="Frontend_nextjs_paragraph_1">
+                                در زمینه توسعه اپلیکیشن‌های وب مدرن، <strong>Next.js</strong> یک فریم‌ورک جاوااسکریپت بسیار کارآمد برای توسعه اپلیکیشن‌های سرور-ساید رندر شده است. این فریم‌ورک با بهره‌گیری از قابلیت‌های <strong>Server-Side Rendering (SSR)</strong> و <strong>Static Site Generation (SSG)</strong>، سرعت بارگذاری صفحات را به‌شدت افزایش می‌دهد و تجربه کاربری بهتری ارائه می‌دهد.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_2">
+                                Next.js علاوه بر پشتیبانی از رندرینگ سرور، دارای ویژگی‌هایی چون <strong>API Routes</strong> برای ایجاد API داخلی و <strong>Image Optimization</strong> برای بارگذاری بهینه تصاویر است. این ویژگی‌ها به توسعه‌دهندگان این امکان را می‌دهند که اپلیکیشن‌هایی سریع، مقیاس‌پذیر و با عملکرد بالا بسازند.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_3">
+                                دیگر از ویژگی‌های برجسته Next.js، پشتیبانی از <strong>Incremental Static Regeneration (ISR)</strong> است که به توسعه‌دهندگان این امکان را می‌دهد که صفحات استاتیک را به‌صورت تدریجی و در زمان اجرا به‌روزرسانی کنند. این ویژگی به بهبود عملکرد و کارایی اپلیکیشن‌ها کمک می‌کند.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_4">
+                                Next.js همچنین از <strong>TypeScript</strong> به‌طور کامل پشتیبانی می‌کند، که این امر به توسعه‌دهندگان این امکان را می‌دهد که از تایپ‌گذاری ایمن و ویژگی‌های پیشرفته TypeScript در پروژه‌های خود استفاده کنند.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_5">
+                                یکی از ویژگی‌های مهم Next.js، پشتیبانی از <strong>Dynamic Routing</strong> است که به توسعه‌دهندگان این امکان را می‌دهد که به‌راحتی مسیرهای پویا ایجاد کنند. این ویژگی به‌ویژه در پروژه‌های بزرگ و پیچیده که نیاز به مدیریت مسیرهای متعدد دارند، بسیار مفید است.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_6">
+                                علاوه بر این، Next.js با ارائه <strong>Built-in CSS and Sass Support</strong> به توسعه‌دهندگان این امکان را می‌دهد که به‌راحتی استایل‌های خود را مدیریت کنند و از ویژگی‌های پیشرفته CSS و Sass بهره‌مند شوند. این ویژگی‌ها به بهبود ساختار و نگهداری کدهای CSS کمک می‌کنند.
+                            </p>
+                            <p id="Frontend_nextjs_paragraph_7" class="example">
+                                Next.js همچنین دارای <strong>API Routes</strong> است که به توسعه‌دهندگان این امکان را می‌دهد که به‌راحتی API‌های خود را در همان پروژه ایجاد کنند. این ویژگی به کاهش پیچیدگی‌ها و افزایش کارایی پروژه‌ها کمک می‌کند.
+                            </p>
+                            <div class="image-container">
+                                <img src="image/Next.js.jpg" alt="Next.js Example" width="60%">
+                            </div>
+                            <p id="Frontend_nextjs_paragraph_8"><em>منبع: <a href="https://nextjs.org/docs" target="_blank">Next.js Docs</a></em></p>
+                        </section>
+
+                        <div id="conclusion">
+                            <h2 id="Frontend_conclusion_title">نتیجه‌گیری</h2>
+                            <p id="Frontend_conclusion_paragraph_1">
+                                با توجه به رشد سریع دنیای توسعه فرانت‌اند، استفاده از ابزارها و فریم‌ورک‌های پیشرفته مانند <strong>JavaScript</strong>، <strong>TypeScript</strong>، <strong>HTML & CSS</strong>، <strong>React</strong> و <strong>Next.js</strong> به توسعه‌دهندگان این امکان را می‌دهد که اپلیکیشن‌های وب کارآمد، مقیاس‌پذیر و با تجربه کاربری بی‌نقص بسازند. این ابزارها و فریم‌ورک‌ها نه تنها به بهبود عملکرد و کارایی اپلیکیشن‌ها کمک می‌کنند، بلکه فرآیند توسعه را نیز ساده‌تر و سریع‌تر می‌سازند.
+                            </p>
+                            <p id="Frontend_conclusion_paragraph_2">
+                                به عنوان یک مهندس رابط کاربری و توسعه‌دهنده وب، تسلط بر این ابزارها و فریم‌ورک‌ها برای ساخت وب‌سایت‌های حرفه‌ای و موفق ضروری است. این تکنولوژی‌ها به توسعه‌دهندگان این امکان را می‌دهند که با استفاده از بهترین روش‌ها و استانداردهای روز، اپلیکیشن‌هایی با کیفیت بالا و تجربه کاربری بی‌نظیر ایجاد کنند.
+                            </p>
+                            <p id="Frontend_conclusion_paragraph_3">
+                                در نهایت، با توجه به تغییرات سریع و پیشرفت‌های مداوم در دنیای تکنولوژی، یادگیری و به‌روز نگه‌داشتن مهارت‌ها و دانش خود در زمینه توسعه فرانت‌اند اهمیت بسیاری دارد. استفاده از منابع آموزشی معتبر و شرکت در دوره‌های آموزشی می‌تواند به توسعه‌دهندگان کمک کند تا با آخرین تکنولوژی‌ها و روش‌های توسعه آشنا شوند و در پروژه‌های خود از آن‌ها بهره‌مند شوند.
+                            </p>
+                            <p id="Frontend_conclusion_paragraph_4">
+                                استفاده از این ابزارها و فریم‌ورک‌ها، می‌توان اپلیکیشن‌هایی ساخت که نه تنها از نظر فنی قوی و پایدار هستند، بلکه تجربه کاربری بی‌نقصی را نیز ارائه می‌دهند. این امر به توسعه‌دهندگان کمک می‌کند تا در دنیای رقابتی امروز موفقیت بیشتری کسب کنند و پروژه‌های خود را به بهترین شکل ممکن به انجام برسانند.
+                            </p>
+                        </div>
+
+                    </div>
+
+                </main>
+            </div>
+
+            <div class="related-articles_container">
+                <div class="title-container">
+                    <div class="line"></div>
+                    <h2 id="related_articles_related_article_title">مقالات مرتبط</h2>
+                    <div class="line"></div>
+                </div>
+                <section class="related-articles">
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-creative.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_1_title">خلاقیت، کلید موفقیت در دنیای مدرن</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_creativity">ایده‌های جدید</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_creativity-author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article2.html" class="categories__btn" id="related_articles_related_article_1_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-ui-enginier.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_2_title">مهندس رابط کاربری</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_ui-rolls">نقش و مسئولیت‌ها و مهارت‌های کلیدی</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_ui-author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article2.html" class="categories__btn" id="related_articles_related_article_2_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Senior-Frontendjpg.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_3_title">مهندس ارشد فرانت‌اند ؛ نقش کلیدی در توسعه وب مدرن</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_frontend-engineer">الگوهای معماری مدرن</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_frontend-engineer_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article3.html" class="categories__btn" id="related_articles_related_article_3_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Web-Development.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_4_title">توسعه وب؛ از مفاهیم پایه تا تکنولوژی‌های پیشرفته</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_web_development">توسعه‌دهنده وب</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_web_development_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article4.html" class="categories__btn" id="related_articles_related_article_4_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="article">
+                        <div class="temporary__storage" id="articles">
+                            <div class="card">
+                            <div class="image">
+                                <img src="image/related_articles-Artificial Intelligence.jpg" alt="">
+                            </div>
+                            <div class="image__overlay"></div>
+                            <div class="contents">
+                                <div class="avatar"></div>
+                                <div class="content__text">
+                                <span class="stream__title" id="related_articles_related_article_5_title">هوش مصنوعی؛ نیروی محرک تحول در تکنولوژی و کسب‌وکار</span>
+                                <div class="content__body">
+                                    <span class="streamer__rolls" id="related_articles_Ai_rolls">تحول در تکنولوژی</span>
+                                    <span>  
+                                        <span class="streamer__name" id="related_articles_Ai_author">نویسنده : محدثه جوکار</span>                        
+                                    </span>
+                                </div>
+                                
+                                <span class="categories">
+                                    <a href="./article5.html" class="categories__btn" id="related_articles_related_article_5_link">ادامه مطلب</a>
+                                    <a class="categories__btn" href="#">Español</a>
+                                </span>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <div class="newsletter">
+                        <h4 id="newsletter_title">عضویت در خبرنامه</h4>
+                        <form id="newsletter-form">
+                            <input type="email" id="newsletter_placeholder" placeholder="ایمیل خود را وارد کنید" required>
+                            <button type="submit" id="newsletter_button">ثبت‌نام</button>
+                        </form>
+                        <p id="newsletter_success_message" style="color: green;">ثبت‌نام شما با موفقیت انجام شد!</p>
+                    </div>
+                </div>
+            
+                <div class="footer-bottom">
+                    <p id="newsletter_text">© 2025 تمامی حقوق محفوظ است</p>
+                </div>
+            </footer>
+        </div>
+    </article>
+
+    <script src="js/app.js"></script>
+    <script src="js/lang.js"></script>
+
+</body>
+</html>

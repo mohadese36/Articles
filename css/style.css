@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400italic,700|Sansita+One');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import 'articles.css';
+@import 'content.css';
+@import 'footer.css';
+@import 'header.css';
+@import 'nav.css';
+@import 'responsive.css';
+
+@font-face {
+    font-family: 'Yekan';
+    src: url('../fonts/Yekan.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lalezar';
+    src: url('../fonts/Lalezar.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* border: 1px solid; */
+}
+
+:root {
+    --primary-color: #4b9cd3;
+    --secondary-color: #007fae;
+    --dark-blue: #13294b;
+    --light-gray: #e1e1e1;
+
+    --medium-gray: #767676;
+    --dark-gray: #151515;
+    --deep-purple: #14032e;
+    --deep-purple-1: #0b0118;
+    
+    --alert-red: #e31837;
+    --highlight-green: #597b1b;
+    --text-color: #151515;
+    --background-body: #f9f9f9; 
+
+    --hover-color: #006f7a;
+
+  }
+  
+
+html {
+    scroll-behavior: smooth;
+}
+
+html {
+    scroll-padding-top: 6rem; /* ارتفاع هدر شما */
+}
+
+a {
+    color: var(--primary-color); 
+    text-decoration: none;
+    transition: all 0.7s ease;
+    font-size: clamp(0.8rem, 1.3vw, 1rem );
+}
+
+a:hover {
+    text-decoration: none;
+    color: var(--secondary-color);
+    
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+    background-color: var(--light-gray);
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    line-height: 1.7;
+}
+
+
+[dir="rtl"] body {
+    font-family: 'Yekan', sans-serif;
+
+}
+[dir="rtl"] body strong {
+    font-family: 'Lalezar';
+
+}
+
+[dir="ltr"] body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+
+
+
+}
+
+[dir="ltr"] body strong{
+    font-family: 'Lalezar', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 300;
+
+}
+
+
+h2 {
+    color: var(--dark-blue); /* رنگ آبی تیره */
+    font-size: 1.3rem;
+    margin-bottom: 0.9375rem; 
+}
+
+h3 {
+    color: var( --text-color); 
+    opacity: 0.9;
+    font-size: 1.2rem;
+    font-weight: 900;
+    margin-bottom: 0.75rem; 
+}
+
+p {
+    font-size: 1.1rem;
+    /* font-weight: 300; */
+    line-height: 1.6; 
+    margin-bottom: 1.125rem;
+    color: var( --text-color); 
+    opacity: 0.8;
+
+}
+
+/* [dir="ltr"] strong {
+    font-family: 'Lalezar', sans-serif !important;
+    color: red;
+}
+
+ strong {
+    color: red !important;
+} */
+
+strong {
+    font-family: 'Lalezar' sans-serif;
+    font-weight: 200;
+
+    
+}
+
+span {
+    font-weight: 600;
+}
+
+ul li {
+    color: var(--deep-purple); 
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+button, .btn{
+    color: var(--light-gray) !important; /* رنگ متن دکمه‌ها */
+    background-color: var(--secondary-color) ; 
+}
+
+
+
+
+
+
+
