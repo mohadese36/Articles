@@ -78,28 +78,18 @@ async function setLanguage(lang) {
 
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    const lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+    let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+
+    // بررسی مقدار زبان مرورگر
+    const userLang = navigator.language || navigator.userLanguage;
+    if (!urlParams.get('lang') && userLang.startsWith('fa')) {
+        lang = 'fa';
+        window.location.search = `?lang=fa`; // اضافه کردن پارامتر `lang=fa` به URL
+    }
+
     setLanguage(lang);
-
-    // تنظیم متن دکمه تغییر زبان
-    const languageSwitcher = document.getElementById('change-language2');
-    const languageSwitcherButton = languageSwitcher.querySelector('button');
-    languageSwitcherButton.textContent = lang === 'fa' ? 'English' : 'Persian';
-
-    languageSwitcher.addEventListener('click', () => {
-        const newLang = document.documentElement.lang === 'fa' ? 'en' : 'fa';
-        setLanguage(newLang);
-        languageSwitcherButton.textContent = newLang === 'fa' ? 'English' : 'Persian';
-    });
-
-    // اضافه کردن پارامتر زبان به همه لینک‌ها
-    const links = document.querySelectorAll('a');
-    links.forEach(link => {
-        const url = new URL(link.href);
-        url.searchParams.set('lang', lang);
-        link.href = url.toString();
-    });
 });
+
 
 // اضافه کردن رویداد کلیک به لینک‌ها برای حفظ زبان انتخاب شده
 document.addEventListener('click', (event) => {
