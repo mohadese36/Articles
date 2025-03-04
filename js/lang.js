@@ -61,6 +61,22 @@ function updateTitles(lang) {
     }
 }
 
+
+////////////////
+document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+
+    // اگر پارامتر lang در آدرس نبود، اضافه کن
+    if (!urlParams.get('lang')) {
+        const newUrl = `${window.location.pathname}?lang=${lang}`;
+        window.history.replaceState({}, '', newUrl);
+    }
+
+    setLanguage(lang);
+});
+
+//////////////////
 async function setLanguage(lang) {
     await loadTranslations(lang);
     updatePageContent(lang);
@@ -156,5 +172,14 @@ document.addEventListener('click', (event) => {
 });
 
 
+document.addEventListener('DOMContentLoaded', () => {
+    const lang = new URLSearchParams(window.location.search).get('lang') || 'en';
+
+    document.querySelectorAll('a').forEach(link => {
+        const url = new URL(link.href, window.location.origin);
+        url.searchParams.set('lang', lang);
+        link.href = url.toString();
+    });
+});
 
 
