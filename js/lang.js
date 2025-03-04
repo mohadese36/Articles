@@ -241,7 +241,6 @@ async function setLanguage(lang) {
     }
 }
 
-// اجرای تنظیمات زبان در هنگام بارگذاری صفحه
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     let lang = getCurrentLanguage();
@@ -277,6 +276,13 @@ document.addEventListener('DOMContentLoaded', () => {
             url.searchParams.set('lang', lang);
             link.href = url.toString(); // اضافه کردن پارامتر lang به لینک‌ها
         }
+    });
+
+    // تغییر زبان از طریق دکمه جدید (language-toggle-btn)
+    document.getElementById('language-toggle-btn').addEventListener('click', function() {
+        const currentLang = new URLSearchParams(window.location.search).get('lang');
+        const newLang = currentLang === 'fa' ? 'en' : 'fa'; // تغییر زبان از فارسی به انگلیسی یا بالعکس
+        window.location.href = window.location.pathname + '?lang=' + newLang;
     });
 });
 
