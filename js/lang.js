@@ -27,7 +27,6 @@ async function loadTranslations(lang) {
         const response = await fetch(`lang/${lang}.json`);
         const data = await response.json();
         translations[lang] = data;  // ذخیره داده‌ها در ترجمه‌ها
-        // console.log(`Translations for ${lang}:`, translations[lang]);
     } catch (error) {
         console.error('Error loading translations:', error);
     }
@@ -35,23 +34,18 @@ async function loadTranslations(lang) {
 
 function updatePageContent(lang) {
     const data = translations[lang];
-    // console.log(`Updating page content for ${lang}:`, data);
 
     for (const section in data) {
         for (const key in data[section]) {
-            const elementId = `${section}_${key}`;  
+            const elementId = `${section}_${key}`;
             const element = document.getElementById(elementId);
             if (element) {
-                // console.log(`Updating element with ID ${elementId} to:`, data[section][key]);
                 if (element.tagName === 'INPUT' && element.type === 'email') {
                     element.placeholder = data[section][key];
                 } else {
                     element.innerHTML = data[section][key];
                 }
-            } 
-            // else {
-            //     console.warn(`Element with ID ${elementId} not found`);
-            // }
+            }
         }
     }
 }
@@ -69,12 +63,11 @@ function updateTitles(lang) {
 
 async function setLanguage(lang) {
     await loadTranslations(lang);
-    // console.log('Loaded translations:', translations[lang]); 
     updatePageContent(lang);
-    updateTitles(lang);  // اضافه کردن این خط برای به‌روزرسانی تایتل‌ها
+    updateTitles(lang);
     document.documentElement.lang = lang;
     document.documentElement.dir = lang === 'fa' ? 'rtl' : 'ltr';
-    localStorage.setItem('selectedLanguage', lang);  // ذخیره زبان انتخاب شده در لوکال استورج
+    localStorage.setItem('selectedLanguage', lang);
 
     if (lang === 'fa') {
         document.body.classList.add('rtl');
@@ -113,7 +106,7 @@ document.addEventListener('click', (event) => {
     if (event.target.tagName === 'A' && event.target.href) {
         const currentLang = localStorage.getItem('selectedLanguage') || 'en';
         const url = new URL(event.target.href);
-        url.searchParams.set('lang', currentLang);  // اضافه کردن پارامتر زبان به URL
+        url.searchParams.set('lang', currentLang);
         event.target.href = url.toString();
     }
 });
