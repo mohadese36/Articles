@@ -148,6 +148,9 @@ const titles = {
 async function loadTranslations(lang) {
     try {
         const response = await fetch(`lang/${lang}.json`);
+        if (!response.ok) {
+            throw new Error('Network response was not ok');
+        }
         const data = await response.json();
         translations[lang] = data;  // ذخیره داده‌ها در ترجمه‌ها
     } catch (error) {
@@ -184,9 +187,12 @@ function updateTitles(lang) {
     }
 }
 
-
 async function setLanguage(lang) {
     await loadTranslations(lang);
+    if (!translations[lang]) {
+        console.error(`Translations for language ${lang} not found.`);
+        return;
+    }
     updatePageContent(lang);
     updateTitles(lang);
     document.documentElement.lang = lang;
@@ -200,7 +206,7 @@ async function setLanguage(lang) {
     }
 }
 
- document.addEventListener('DOMContentLoaded', () => {
+document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
 
@@ -241,8 +247,3 @@ async function setLanguage(lang) {
         }
     });
 });
-
-
-
-
-
