@@ -200,47 +200,47 @@ async function setLanguage(lang) {
     }
 }
 
-//  document.addEventListener('DOMContentLoaded', () => {
-//     const urlParams = new URLSearchParams(window.location.search);
-//     let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+ document.addEventListener('DOMContentLoaded', () => {
+    const urlParams = new URLSearchParams(window.location.search);
+    let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
 
-//     // اگر lang در URL نبود، مقدار مناسب را تنظیم کرده و صفحه را ریدایرکت کن
-//     if (!urlParams.get('lang')) {
-//         const userLang = navigator.language || navigator.userLanguage;
-//         lang = userLang.startsWith('fa') ? 'fa' : 'en';
+    // اگر lang در URL نبود، مقدار مناسب را تنظیم کرده و صفحه را ریدایرکت کن
+    if (!urlParams.get('lang')) {
+        const userLang = navigator.language || navigator.userLanguage;
+        lang = userLang.startsWith('fa') ? 'fa' : 'en';
 
-//         // اضافه کردن lang به URL و ریدایرکت
-//         urlParams.set('lang', lang);
-//         window.location.replace(window.location.pathname + '?' + urlParams.toString());
-//     } else {
-//         setLanguage(lang);
-//     }
+        // اضافه کردن lang به URL و ریدایرکت
+        urlParams.set('lang', lang);
+        window.location.replace(window.location.pathname + '?' + urlParams.toString());
+    } else {
+        setLanguage(lang);
+    }
 
-//     // تنظیم متن دکمه تغییر زبان
-//     const languageSwitcher = document.getElementById('change-language2');
-//     if (languageSwitcher) {
-//         const languageSwitcherButton = languageSwitcher.querySelector('button');
-//         if (languageSwitcherButton) {
-//             languageSwitcherButton.textContent = lang === 'fa' ? 'English' : 'Persian';
+    // تنظیم متن دکمه تغییر زبان
+    const languageSwitcher = document.getElementById('change-language2');
+    if (languageSwitcher) {
+        const languageSwitcherButton = languageSwitcher.querySelector('button');
+        if (languageSwitcherButton) {
+            languageSwitcherButton.textContent = lang === 'fa' ? 'English' : 'Persian';
 
-//             languageSwitcher.addEventListener('click', () => {
-//                 const newLang = lang === 'fa' ? 'en' : 'fa';
-//                 urlParams.set('lang', newLang);
-//                 window.location.replace(window.location.pathname + '?' + urlParams.toString());
-//             });
-//         }
-//     }
+            languageSwitcher.addEventListener('click', () => {
+                const newLang = lang === 'fa' ? 'en' : 'fa';
+                urlParams.set('lang', newLang);
+                window.location.replace(window.location.pathname + '?' + urlParams.toString());
+            });
+        }
+    }
 
-//     // اضافه کردن پارامتر زبان به همه لینک‌ها
-//     const links = document.querySelectorAll('a');
-//     links.forEach(link => {
-//         if (link.href) {
-//             const url = new URL(link.href, window.location.origin);
-//             url.searchParams.set('lang', lang);
-//             link.href = url.toString();
-//         }
-//     });
-// });
+    // اضافه کردن پارامتر زبان به همه لینک‌ها
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        if (link.href) {
+            const url = new URL(link.href, window.location.origin);
+            url.searchParams.set('lang', lang);
+            link.href = url.toString();
+        }
+    });
+});
 
 
 
