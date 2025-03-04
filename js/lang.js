@@ -183,6 +183,12 @@ const titles = {
     }
 };
 
+// دریافت زبان فعلی کاربر
+function getCurrentLanguage() {
+    const urlParams = new URLSearchParams(window.location.search);
+    return urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+}
+
 async function loadTranslations(lang) {
     try {
         const response = await fetch(`lang/${lang}.json`);
@@ -219,6 +225,7 @@ function updateTitles(lang) {
     }
 }
 
+// تنظیم زبان صفحه
 async function setLanguage(lang) {
     await loadTranslations(lang);
     updatePageContent(lang);
@@ -234,9 +241,10 @@ async function setLanguage(lang) {
     }
 }
 
+// اجرای تنظیمات زبان در هنگام بارگذاری صفحه
 document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
-    let lang = urlParams.get('lang') || localStorage.getItem('selectedLanguage') || 'en';
+    let lang = getCurrentLanguage();
 
     if (!urlParams.has('lang')) {
         lang = navigator.language.startsWith('fa') ? 'fa' : 'en';
@@ -246,7 +254,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setLanguage(lang);
 
-    // دکمه تغییر زبان
+    // تغییر زبان از طریق دکمه
     const languageSwitcher = document.getElementById('change-language2');
     if (languageSwitcher) {
         const languageSwitcherButton = languageSwitcher.querySelector('button');
@@ -262,12 +270,12 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // اضافه کردن پارامتر زبان به همه لینک‌ها هنگام کلیک
-    document.addEventListener('click', (event) => {
-        if (event.target.tagName === 'A' && event.target.href) {
-            const url = new URL(event.target.href, window.location.origin);
+    document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', (event) => {
+            const url = new URL(link.href, window.location.origin);
             url.searchParams.set('lang', lang);
-            event.target.href = url.toString();
-        }
+            link.href = url.toString();
+        });
     });
 });
 
