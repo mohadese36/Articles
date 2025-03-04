@@ -241,13 +241,6 @@ async function setLanguage(lang) {
     }
 }
 
-document.addEventListener('DOMContentLoaded', () => {
-    const urlParams = new URLSearchParams(window.location.search);
-    let lang = urlParams.get('lang') || 'en'; // زبان پیش‌فرض انگلیسی
-
-    // حالا با توجه به پارامتر زبان در URL، صفحه را بارگذاری کنید.
-    setLanguage(lang);
-});
 
 
 
