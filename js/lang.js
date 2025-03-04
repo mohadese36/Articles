@@ -246,6 +246,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const urlParams = new URLSearchParams(window.location.search);
     let lang = getCurrentLanguage();
 
+    // اگر زبان در URL نیست، زبان پیش‌فرض را تنظیم کرده و به URL اضافه کنید
     if (!urlParams.has('lang')) {
         lang = navigator.language.startsWith('fa') ? 'fa' : 'en';
         urlParams.set('lang', lang);
@@ -264,20 +265,21 @@ document.addEventListener('DOMContentLoaded', () => {
             languageSwitcher.addEventListener('click', () => {
                 const newLang = lang === 'fa' ? 'en' : 'fa';
                 urlParams.set('lang', newLang);
-                window.location.replace(`${window.location.pathname}?${urlParams}`);
+                window.location.href = `${window.location.pathname}?${urlParams}`; // اینجا href را به روز کنید
             });
         }
     }
 
     // اضافه کردن پارامتر زبان به همه لینک‌ها هنگام کلیک
     document.querySelectorAll('a').forEach(link => {
-        link.addEventListener('click', (event) => {
-            const url = new URL(link.href, window.location.origin);
+        const url = new URL(link.href, window.location.origin);
+        if (!url.searchParams.has('lang')) {
             url.searchParams.set('lang', lang);
-            link.href = url.toString();
-        });
+            link.href = url.toString(); // اضافه کردن پارامتر lang به لینک‌ها
+        }
     });
 });
+
 
 
 
