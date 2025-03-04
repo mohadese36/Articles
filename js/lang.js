@@ -98,6 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
         setLanguage(newLang);
         languageSwitcherButton.textContent = newLang === 'fa' ? 'English' : 'Persian';
     });
+
+    // اضافه کردن پارامتر زبان به همه لینک‌ها
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        const url = new URL(link.href);
+        url.searchParams.set('lang', lang);
+        link.href = url.toString();
+    });
 });
 
 // اضافه کردن رویداد کلیک به لینک‌ها برای حفظ زبان انتخاب شده
